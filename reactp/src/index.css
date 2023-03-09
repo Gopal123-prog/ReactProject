@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./background.png");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+#signin{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ada73d83;
+  margin-top: 120px;
+  margin-right: 350px;
+  margin-left: 350px;
+  border-radius: 25px;
+  box-shadow: 5px 15px 15px;
+  min-width: 250px;
+}
+#signup{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ada73d83;
+  margin-top: 80px;
+  margin-right: 350px;
+  margin-left: 350px;
+  min-width: 250px;
+  border-radius: 25px;
+  box-shadow: 5px 15px 15px;
+}
+
+.mainheader{
+  display: grid;
+  grid-template-columns:20% 60% 5% 5%;
+  position: sticky;
+  margin: 10px;
+  border-radius:20px;
+  max-height: max-content;
+}
+.hambergerbutton{
+  margin: 30px;
+  height: 35px;
+  width:  35px;
+  border-color: bisque;
+  border-radius: 15%;
+}
+
+.hambergerbutton img{
+  height: 1.6em;
+  width:  1.6em;
+  margin-left: -3px;
+  border-radius:40%;
+  border-color: bisque;
+  border-style: solid;
+}
+
+.singinoptionsclass{
+  margin:5px;
+  display: none;
+  margin-top: -30px;
+  margin-left: -13px;
+}
+
+.divforheader{
+  margin-top: -25px;
+}
+
+.singinoptionsclass button{
+    width:65px;
+    height: 25px;
+    margin:5px;
+    border-radius:5px;
+    border-color: rgb(158, 90, 6);
+}
+.singinoptionsclass button a{
+  text-decoration: none;
+  color: black;
+}
+.singinoptionsclass button:hover{
+        background-color:rgb(219, 193, 46);
+        height: 30px;
+        width: 70px;
+}
+
+.activate{
+  display: none;
+}
+
+.activate1{
+  display: block;
+}
+
+.sortoptionsclass button{
+    width:55px;
+    height: 25px;
+    font-size:xx-small;
+    padding:3px;
+    margin:5px;
+    border-radius:5px;
+    border-color: rgb(158, 90, 6);
+    margin: 0;
+
+}
+
+.sortoptionsclass{
+  display: block;
+  margin-top: -20px;
+  margin-left: -13px;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    margin-left: 25px;
+    /* text-align: center;
+    font-family: sans-serif; 
+    background: linear-gradient(to right, rgb(241, 204, 39) 0%, rgba(35, 211, 211, 0) 20%, rgba(236, 241, 242, 0) 61%), linear-gradient(rgba(231, 234, 235, 0) 52%,  rgb(248, 250, 250) 61%); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: wave 20000ms ease alternate infinite;
+    transition: all 0.4s ease; */
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50vw 10px;
+  }
+}
+
+.search{
+  margin-left: 270px;
+  width: 200px;
+  height: 20px;
+  border-color: bisque;
+  margin-bottom: 45px;
+}
+
+
+.image{
+  padding: 10px;
+  height: 150px;
+  width:200px;
+  border-radius: 20px;
+}
+
+.itemscontainer{
+  display: inline-block;
+  width: 46%;
+  border-radius:10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color:gold;
+  margin-left: 30px;
+  margin: 8px;
+  margin-left: 25px;
+  line-height: 5px;
+}
+
+.item{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-left: 10px;
+  border-radius: 10px;
+  background: linear-gradient(to right,black,gold);
+}
+
+.button{
+  height: 30px;
+  width: 40%;
+  border-radius: 20px;
+  border-color: bisque;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(49, 49, 223, 0.791);
+}
+
+.inputs{
+  border-radius: 5px;
+  width: 40%;
+}
+
+.ratingclass{
+  margin-left: -42px;
+}
+
+.dashboardsidebar{
+  margin-top: 20px;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  border-radius: 10px;
+}
+
+.dashboardsidebar button{
+   margin-left: 55px;
+   margin-right: 15px;
+   margin: 10px;
+   margin-bottom: 10px;
+   border-radius: 15px; 
+}
+
+.dashboardsidebar img{
+ text-decoration: none;
+ padding-left: 750px;
+ padding-top: 20px;
+ width: 30px;
+ height: 30px;
+}
+
+.dashboardsidebar .buttonhead a{
+  text-decoration: none;
+}
+
+.dashboardsidebar .buttonhead:hover{
+  position: static;
+  background-color: #0652317e;
+  border-color: black;
+  border-style:dotted;
+  text-decoration: underline;
+  color: rgb(10, 35, 136);
+}
+
+/* .home{
+  background-color: #11f19f2a;
+} */
+
+
+
+.iframedisplayclass iframe{
+   width:100%;
+  height: 600px;
+}
+
+.iframedisplayclass{
+  margin-top: 80px;
+}
+
+.feed{
+  margin-top: 200px;
+  height: 25px;
+}
+
+#map {
+  height: 400px; 
+  width: 100%; 
+}
+
