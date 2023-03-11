@@ -11,6 +11,7 @@ import Orders from './Orders';
 import Track from './Track';
 import Feedback from './Feedback';
 import  Cart  from './Cart';
+// import Push from './Push'
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
+          {/* <Route path='/Push' element={<Push/>}/> */}
           <Route path='/signin' element={<Signin/>}></Route>
           <Route path='/signup' element={<Signup/>}></Route>
           {/* <Route path="/itemslist" element={<ItemsList/>}></Route> */}

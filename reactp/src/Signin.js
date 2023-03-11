@@ -24,10 +24,11 @@ const Signin = () => {
     var flag = 0;
     var i=0;
     for (i=0;i<vdata.length;i++){
-      if (vdata[i].username===username1){
+      if ("gopal"===username1){
         flag = 1;
-        if (vdata[i].password===password1){
-          navigate("./dashboard");
+        if ("123"===password1){
+          navigate("../dashboard");
+          alert("successfully loggedin")
           break;
         }
       }

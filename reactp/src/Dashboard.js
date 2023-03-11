@@ -1,6 +1,10 @@
 import React from 'react'
 
-const Dashboard = () => {
+const Dashboard = (props) => {
+
+   const logouthandler=()=>{
+        console.log(props.username)
+   }
 
   return (
      <div >
@@ -8,7 +12,8 @@ const Dashboard = () => {
               <button className='buttonhead'><a href='./dashboard/home' target='iframetarget'>home</a></button>
               <button className='buttonhead'><a href='./dashboard/orders' target='iframetarget'>orders</a></button>
               <button className='buttonhead'><a href='./dashboard/track' target='iframetarget'>track</a></button>
-              <button className='buttonhead'><a href='./dashboard/feedback' target='iframetarget'>feedback</a></button>  
+              <button className='buttonhead'><a href='./dashboard/feedback' target='iframetarget'>feedback</a></button>
+              <button className='buttonhead' onClick={logouthandler}><a href='./'>Logout</a></button>  
               <a href='./dashboard/cart' target='iframetarget'><img src="./media/cart.png"/></a>
         </div>
         <div className='iframedisplayclass'>
