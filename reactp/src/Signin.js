@@ -24,9 +24,9 @@ const Signin = () => {
     var flag = 0;
     var i=0;
     for (i=0;i<vdata.length;i++){
-      if ("gopal"===username1){
+      if (vdata[i].username1===username1){
         flag = 1;
-        if ("123"===password1){
+        if (vdata[i].password1===password1){
           navigate("../dashboard");
           alert("successfully loggedin")
           break;
@@ -39,9 +39,9 @@ const Signin = () => {
     }
     if (flag===0 && i===vdata.length){
       alert("User does not exist");
-    }
-    
+    }   
  }
+ 
   return (
     <div>
     

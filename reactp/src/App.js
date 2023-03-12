@@ -11,6 +11,10 @@ import Orders from './Orders';
 import Track from './Track';
 import Feedback from './Feedback';
 import  Cart  from './Cart';
+import Admin from './Admin';
+import Add from './Add';
+import Delete from './Delete';
+import AdminSignin from './AdminSignin';
 // import Push from './Push'
 
 
@@ -22,7 +26,10 @@ const App = () => {
           {/* <Route path='/Push' element={<Push/>}/> */}
           <Route path='/signin' element={<Signin/>}></Route>
           <Route path='/signup' element={<Signup/>}></Route>
-          {/* <Route path="/itemslist" element={<ItemsList/>}></Route> */}
+          <Route path="/adminsignin" element={<AdminSignin/>}></Route>
+          <Route path="/admin" element={<Admin/>}></Route>
+          <Route path="/admin/add-item" element={<Add/>}></Route>
+          <Route path="/admin/delete-item" element={<Delete/>}></Route>
           <Route path='/' element={<Header/>}></Route>
           <Route path='/dashboard' element={<Dashboard/>}></Route>
           <Route path='/dashboard/cart' element={<Cart/>}></Route>

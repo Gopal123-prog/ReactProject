@@ -26,8 +26,9 @@ const Header = () => {
         <div className='divforheader'>
            <button className='hambergerbutton' onClick={credentialDisplay}><img src="./media/hamburger_button.png"/></button>
            <ul className="singinoptionsclass" id="hamburger">
-              <button><a href='/Signin'>signin</a></button><br/>
-              <button><a href='/Signup'>signup</a></button>
+              <button><a href='/signin'>signin</a></button><br/>
+              <button><a href='/signup'>signup</a></button><br/>
+              <button><a href='/adminsignin'>Admin</a></button>
            </ul>
         </div>
         <div>
